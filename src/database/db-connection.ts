@@ -8,9 +8,7 @@ const sequelize = new Sequelize({
   dialect: "postgres",
   models: [path.join(__dirname, "..", "models")],
   //   models: [Juben],
-  logging: false,
+  logging: console.log,
 });
-
-console.log(__dirname + "/models");
 
 export default sequelize;
